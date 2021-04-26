@@ -1,0 +1,19 @@
+########
+###To verify that the service is running and reachable by typing:
+sudo firewall-cmd --state
+
+########
+###We can see which zone is currently selected as the default by typing:
+firewall-cmd --get-default-zone
+
+########
+###Add temporary port 5000 to public zone:
+firewall-cmd --zone=public --add-port=5000/tcp
+
+########
+###Add permanently port 5000 to public zone:
+firewall-cmd --zone=public --permanent --add-port=5000/tcp
+
+########
+###Reload your firewall:
+firewall-cmd --reload
