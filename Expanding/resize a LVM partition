@@ -1,0 +1,16 @@
+# Change /dev/sda2 to the relevant partition. This should be the last partition
+# growpart command must contain space before partition number
+# Make sure the logical group and volume group are correct
+# If cloud-utils-growpart package doesn't exist, install epel repository
+
+# If required, rescan disk:
+echo "1" > /sys/class/block/sda/device/rescan
+
+# On CentOS 7 run:
+
+yum install -y cloud-utils-growpart
+partprobe /dev/sda
+growpart /dev/sda 2
+pvresize /dev/sda2
+lvresize -l +100%FREE /dev/centos/root
+xfs_growfs /dev/centos/root
