@@ -1,0 +1,7 @@
+ # Show all services:
+ systemctl list-units --type service
+ 
+ # service monitor:
+ systemd-cgtop
+ 
+ 
