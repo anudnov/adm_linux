@@ -1,0 +1,8 @@
+
+
+
+
+# find IP on log file:
+grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" messages
+grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" messages |sort -r
+grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" messages | sort | uniq -c
