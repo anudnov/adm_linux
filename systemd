@@ -3,5 +3,7 @@
  
  # service monitor:
  systemd-cgtop
+ systemd-cgls
  
  
+# systemctl kill postfix.service
