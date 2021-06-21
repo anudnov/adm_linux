@@ -10,7 +10,10 @@ vim /etc/zabbix/zabbix_agentd.conf
 systemctl restart zabbix-agent
 systemctl enable zabbix-agent
 systemctl status zabbix-agent
+sudo ufw allow 10050/tcp
+ufw reload
 
+###########################################################
 # Install Zabbix agent on CentOS 7 / RHEL 7
 # from zabbix repository - https://repo.zabbix.com/zabbix/ - agent versio 5.4
 
@@ -25,3 +28,8 @@ vim /etc/zabbix/zabbix_agentd.conf
 
 systemctl restart zabbix-agent && systemctl enable zabbix-agent
 systemctl status zabbix-agent
+
+# firewall-cmd --new-zone=zabbix --permanent
+# firewall-cmd --permanent --zone=zabbix --add-source=10.10.10.10/32
+# firewall-cmd --permanent --zone=zabbix --add-port=10050/tcp
+# firewall-cmd --reload
