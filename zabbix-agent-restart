@@ -1,0 +1,3 @@
+#!/bin/bash
+systemctl restart zabbix-agent
+systemctl status zabbix-agent
