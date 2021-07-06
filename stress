@@ -1,0 +1,20 @@
+yum install stress
+# OR
+apt-get install stress
+
+# --io option to add input/output activity to the system
+stress --io 4
+
+
+uptime
+stress --cpu 4 --timeout 60s --metrics-brief
+uptime
+
+stress --vm 2 --vm-bytes 1G --timeout 60s
+
+
+# CentOS 6 - No package stress available.
+# sudo yum install -y epel-release
+# sudo yum install -y stress
+#
+#
