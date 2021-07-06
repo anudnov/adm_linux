@@ -1,0 +1,46 @@
+# ERROR:
+yum update
+Loaded plugins: fastestmirror, security
+Setting up Update Process
+Determining fastest mirrors
+YumRepo Error: All mirror URLs are not using ftp, http[s] or file.
+ Eg. Invalid release/repo/arch combination/
+removing mirrorlist with no valid mirrors: /var/cache/yum/x86_64/6/base/mirrorlist.txt
+Error: Cannot find a valid baseurl for repo: base
+
+cd /etc/yum.repos.d/
+cp CentOS-Base.repo CentOS-Base.repo.old
+nano CentOS-Base.repo
+
+Replace sections:
+[base]
+[updates]
+[extras]
+
+          [base]
+          name=CentOS-$releasever - Base
+          # mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+          # baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
+          baseurl=https://vault.centos.org/6.10/os/$basearch/
+          gpgcheck=1
+          gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+          # released updates
+          [updates]
+          name=CentOS-$releasever - Updates
+          # mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+          # baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
+          baseurl=https://vault.centos.org/6.10/updates/$basearch/
+          gpgcheck=1
+          gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+          # additional packages that may be useful
+          [extras]
+          name=CentOS-$releasever - Extras
+          # mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+          # baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
+          baseurl=https://vault.centos.org/6.10/extras/$basearch/
+
+
+yum clean all
+yum update
