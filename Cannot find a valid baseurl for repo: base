@@ -1,12 +1,12 @@
 # ERROR:
-yum update
-Loaded plugins: fastestmirror, security
-Setting up Update Process
-Determining fastest mirrors
-YumRepo Error: All mirror URLs are not using ftp, http[s] or file.
- Eg. Invalid release/repo/arch combination/
-removing mirrorlist with no valid mirrors: /var/cache/yum/x86_64/6/base/mirrorlist.txt
-Error: Cannot find a valid baseurl for repo: base
+          yum update
+          Loaded plugins: fastestmirror, security
+          Setting up Update Process
+          Determining fastest mirrors
+          YumRepo Error: All mirror URLs are not using ftp, http[s] or file.
+           Eg. Invalid release/repo/arch combination/
+          removing mirrorlist with no valid mirrors: /var/cache/yum/x86_64/6/base/mirrorlist.txt
+          Error: Cannot find a valid baseurl for repo: base
 
 cd /etc/yum.repos.d/
 cp CentOS-Base.repo CentOS-Base.repo.old
