@@ -1,0 +1,8 @@
+#### How to connect to the Linux server with SSH-key #### 
+
+#### 1. Create SSH key:
+ssh-keygen
+#### 2. Go to 
+~/.ssh
+#### 3. Copy ssh key to destination server:
+ssh-copy-id 'user'@'server address'
