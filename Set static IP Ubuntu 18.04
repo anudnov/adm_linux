@@ -1,4 +1,4 @@
-# vi /etc/netplan/50-cloud-init.yaml
+/master# vi /etc/netplan/50-cloud-init.yaml
 
 # This file is generated from information provided by
 # the datasource.  Changes to it will not persist across an instance.
@@ -17,4 +17,4 @@ network:
                 - 8.8.8.8
     version: 2
     
-# sudo netplan apply
+/master# sudo netplan apply
