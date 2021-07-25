@@ -7,7 +7,7 @@
 # network: {config: disabled}
 network:
     ethernets:
-        eth0:
+        eth0: # Change nic name!
             addresses:
             - X.X.X.x/24
             gateway4: x.x.x.x
