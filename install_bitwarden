@@ -24,11 +24,11 @@ chmod +x bitwarden.sh
 ###########################################################################################################
 ## Step 4 - Start the Bitwarden installation
 
-#		Installation ID and Key
-#		https://bitwarden.com/host/
-#
-#		Installation Id: b5f739cf-0f2d-4f51-aa4e-ad85009d36d9
-#		Installation Key: PeszUFZ5KmYwQcDBCRls
+* Installation ID and Key
+* https://bitwarden.com/host/
+
+* Installation Id: b5f739cf-0f2d-4f51-aa4e-ad85009d36d9
+* Installation Key: PeszUFZ5KmYwQcDBCRls
 
 ./bitwarden.sh install
 
