@@ -31,6 +31,7 @@ chmod +x bitwarden.sh
 #		Installation Key: PeszUFZ5KmYwQcDBCRls
 
 ./bitwarden.sh install
+
 |	 _     _ _                         _           
 |	| |__ (_) |___      ____ _ _ __ __| | ___ _ __ 
 |	| '_ \| | __\ \ /\ / / _` | '__/ _` |/ _ \ '_ \
@@ -42,7 +43,7 @@ chmod +x bitwarden.sh
 |	===================================================
 |	Docker version 19.03.12, build 48a66213fe
 |	docker-compose version 1.25.0, build unknown
-|	(!) Enter the domain name for your Bitwarden instance (ex. bitwarden.example.com): 69.87.216.49
+|	(!) Enter the domain name for your Bitwarden instance (ex. bitwarden.example.com): "MY DOMAIN NAME"
 |	(!) Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n): n
 |	1.36.1: Pulling from bitwarden/setup
 |	6ec8c9369e08: Pull complete
@@ -58,15 +59,15 @@ chmod +x bitwarden.sh
 |	Digest: sha256:5b2c43b46c03da54aecc6d19098b0574b5fb205f0cd3046019725925cadfdf29
 |	Status: Downloaded newer image for bitwarden/setup:1.36.1
 |	docker.io/bitwarden/setup:1.36.1
-|	(!) Enter your installation id (get at https://bitwarden.com/host): 97e9325e-f0e7-47cf-9667-ac0f008645b9
-|	(!) Enter your installation key: tloMiUlAn4NTUCgWTSC5
+|	(!) Enter your installation id (get at https://bitwarden.com/host): XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
+|	(!) Enter your installation key: XXXXXXXXXXXXXXXXX
 |	(!) Do you have a SSL certificate to use? (y/n): n
 |	(!) Do you want to generate a self-signed SSL certificate? (y/n): y
 |	Generating self signed SSL certificate.
 |	Generating a RSA private key
 |	........................++++
 |	..................++++
-|	writing new private key to '/bitwarden/ssl/self/69.87.216.49/private.key'
+|	writing new private key to '/bitwarden/ssl/self/X.X.X.X/private.key'
 |	-----
 |	Generating key for IdentityServer.
 |	Generating a RSA private key
@@ -86,10 +87,10 @@ chmod +x bitwarden.sh
 |	Building docker-compose.yml.
 |	Installation complete
 |	If you need to make additional configuration changes, you can modify
-  |	the settings in `./bwdata/config.yml` and then run:
-  |	`./bitwarden.sh rebuild` or `./bitwarden.sh update`
-  |	Next steps, run:
-  |	`./bitwarden.sh start`
+|	the settings in `./bwdata/config.yml` and then run:
+|	`./bitwarden.sh rebuild` or `./bitwarden.sh update`
+|	Next steps, run:
+|	`./bitwarden.sh start`
 
 ./bitwarden.sh start
 
