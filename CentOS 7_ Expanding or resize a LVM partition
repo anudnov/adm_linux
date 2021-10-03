@@ -3,16 +3,16 @@
 #### 2. growpart command must contain space before partition number
 #### 3. Make sure the logical group and volume group are correct
 #### 4. If cloud-utils-growpart package doesn't exist, install epel repository
-
 #########
-
+#########
+#########
 yum install -y cloud-utils-growpart
 partprobe /dev/sda
 growpart /dev/sda 2
 pvresize /dev/sda2
 lvresize -l +100%FREE /dev/centos/root
 xfs_growfs /dev/centos/root
-
+#########
 #########
 yum install -y cloud-utils-growpart
 partprobe /dev/sda
@@ -20,3 +20,6 @@ growpart /dev/sda 2
 pvresize /dev/sda2
 lvresize -l +100%FREE /dev/mapper/linux-root
 xfs_growfs /dev/mapper/linux-root
+#########
+#########
+#########
