@@ -10,4 +10,7 @@ apt show postgresql
 
 # Service status:
 sudo systemctl status postgresql.service
-sudo systemctl restart postgresql 
+sudo systemctl restart postgresql
+
+# LogIn
+sudo -u postgres psql
