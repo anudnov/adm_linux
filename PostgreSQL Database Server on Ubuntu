@@ -1,0 +1,13 @@
+# Install:
+sudo apt update && sudo apt -y upgrade
+sudo apt install postgresql postgresql-contrib
+
+# Check Available PostgreSQL Version
+apt show postgresql
+
+# Access configuration:
+# /etc/postgresql/12/main/pg_hba.conf
+
+# Service status:
+sudo systemctl status postgresql.service
+sudo systemctl restart postgresql 
