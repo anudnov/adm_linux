@@ -1,3 +1,5 @@
+#########################################################
+
 # How to create a user account on Ubuntu Linux
 sudo adduser  {user-name}
 # Add the user to the sudo group:
@@ -10,3 +12,5 @@ usermod -aG sudo {user-name}
 sudo userdel {userName}
 # To remove home directory and mail spool too, enter:
 sudo userdel -r  {user-name}
+
+#########################################################
