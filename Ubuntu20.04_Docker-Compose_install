@@ -7,3 +7,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # Test the installation.
 docker-compose --version
+
+
+# From:
+# https://docs.docker.com/compose/install/
