@@ -3,7 +3,7 @@
 sudo apt update
 
 # Step 2: Downloading Dependencies
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
 
 # Step 3: Adding Docker’s GPG Key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
