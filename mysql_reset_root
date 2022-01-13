@@ -1,0 +1,31 @@
+mysql -V 
+
+sudo systemctl stop mysql
+sudo mysqld_safe --skip-grant-tables&
+sudo mysql -u root mysql
+
+###########################################################################
+# MySQL 8.0 
+UPDATE mysql.user SET authentication_string=null WHERE User='root';
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'NEWPASSWORD';
+FLUSH PRIVILEGES;
+exit;
+
+# MySQL 5.7
+UPDATE user SET authentication_string=PASSWORD('NEWPASSWORD') WHERE user='root';
+UPDATE user SET plugin="mysql_native_password" WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+
+# MySQL 5.6
+
+UPDATE user SET Password=PASSWORD('NEWPASSWORD') WHERE user='root';
+UPDATE user SET plugin="mysql_native_password" WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+###########################################################################
+
+sudo systemctl start mysql
+sudo mysql -u root -p
+
