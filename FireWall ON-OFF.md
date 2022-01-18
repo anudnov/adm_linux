@@ -1,4 +1,5 @@
 # CentOS 6
+Stop firewall:
 ```
 service iptables stop
 ```
@@ -6,6 +7,7 @@ Or
 ```
 systemctl stop firewalld
 ```
+Disable firewall:
 ```
 chkconfig iptables off
 ```
