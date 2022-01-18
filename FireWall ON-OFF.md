@@ -1,6 +1,6 @@
 # CentOS 6
 Stop the firewall:
-```bash
+```
 service iptables stop
 ```
 Or 
