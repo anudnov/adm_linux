@@ -3,7 +3,7 @@ Stop the firewall:
 ```
 service iptables stop
 ```
-Or 
+**Or 
 ```
 systemctl stop firewalld
 ```
@@ -33,7 +33,7 @@ Temporary stop the selinux:
 ```
 setenforce 0
 ```
-Edit selinux config file, change SELINUX=**disabled**
+Edit selinux config file, change _SELINUX_=disabled
 ```
 vim /etc/selinux/config
 ```
