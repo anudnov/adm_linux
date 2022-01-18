@@ -1,5 +1,5 @@
 # CentOS 6
-Stop firewall:
+Stop the firewall:
 ```
 service iptables stop
 ```
@@ -7,7 +7,7 @@ Or
 ```
 systemctl stop firewalld
 ```
-Disable firewall:
+Disable the firewall:
 ```
 chkconfig iptables off
 ```
@@ -25,11 +25,13 @@ systemctl stop firewalld
 
 
 # SElinux
+Check status:
 ```
-getenforce                #check status.
+getenforce                
 ```
+Temporary stop the selinux:
 ```
-setenforce 0              #stop selinux temporary
+setenforce 0
 ```
 ```
 vim /etc/selinux/config   #Change SELINUX=disabled
