@@ -1,9 +1,12 @@
 ## CentOS 6
-   service iptables stop
-   systemctl stop firewalld
-
+```
+service iptables stop
+systemctl stop firewalld
+```
+```
 chkconfig iptables off
 systemctl disable iptables
+```
 
 CentOS 7
 systemctl disable firewalld
