@@ -33,6 +33,7 @@ Temporary stop the selinux:
 ```
 setenforce 0
 ```
+Edit selinux config file, change SELINUX=disabled
 ```
-vim /etc/selinux/config   #Change SELINUX=disabled
+vim /etc/selinux/config
 ```
