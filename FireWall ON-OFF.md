@@ -3,7 +3,7 @@ Stop the firewall:
 ```
 service iptables stop
 ```
-**Or 
+**Or **
 ```
 systemctl stop firewalld
 ```
