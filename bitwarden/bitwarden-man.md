@@ -1,4 +1,5 @@
-# Create Bitwarden Local User & Directory (https://bitwarden.com/help/install-on-premise-linux/)
+# Create Bitwarden Local User & Directory 
+(https://bitwarden.com/help/install-on-premise-linux/)
 
 Create a bitwarden user:
 ```
