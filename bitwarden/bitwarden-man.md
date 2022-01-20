@@ -1,7 +1,7 @@
-### Create Bitwarden Local User & Directory
+## Create Bitwarden Local User & Directory
 We recommend configuring your Linux server with a dedicated bitwarden service account, from which to install and run Bitwarden. Doing so will isolate your Bitwarden instance from other applications running on your server.
 
-These steps are Bitwarden-recommended best practices, but are not required. For more information, see Docker's Post-installation steps for Linux documentation.
+# These steps are Bitwarden-recommended best practices, but are not required. For more information, see Docker's Post-installation steps for Linux documentation.
 
 Create a bitwarden user:
 ```
