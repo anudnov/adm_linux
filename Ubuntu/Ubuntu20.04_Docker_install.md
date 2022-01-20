@@ -1,7 +1,7 @@
 ### Installing Docker from Official Repository
 Step 1: Updating the Software Repository
 ```
-sudo apt update
+sudo apt update && apt upgrade -y
 ```
 ### Step 2: Downloading Dependencies
 ```
