@@ -3,7 +3,5 @@
 ```
 nano /etc/ssh/sshd_config
 ```
-
-#### GSSAPIAuthentication yes to: GSSAPIAuthentication no
-and
-### UseDNS yes to: UseDNS no
+1. GSSAPIAuthentication yes to: GSSAPIAuthentication no
+2. UseDNS yes to: UseDNS no
