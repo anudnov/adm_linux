@@ -1,3 +1,8 @@
+### To check the status of your firewall and all rules, enter:
+```
+iptables -L -n
+```
+
 yum install -y firewalld
 systemctl enable firewalld
 systemctl restart firewalld
