@@ -6,7 +6,10 @@ iptables -L -n
 sudo iptables -L -n
 ````
 
-
+### Show blocked ip:
+```
+iptables -L -n | grep X.X.X.X
+```
 
 
 
