@@ -29,13 +29,16 @@ yum install -y firewalld
 systemctl enable firewalld
 systemctl restart firewalld
 ```
-####
+#### firewalld information:
 ```
 firewall-cmd --list-all-zones
+```
+```
 firewall-cmd --get-default-zone
+```
+```
 firewall-cmd --list-services
 ```
-
 
 #### To Enable all the incoming ports for a service:
 ```
