@@ -2,11 +2,19 @@
 ```
 iptables -L -n
 ```
+```
+sudo iptables -L -n
+````
 
+
+
+
+
+```
 yum install -y firewalld
 systemctl enable firewalld
 systemctl restart firewalld
-
+```
 #########
 firewall-cmd --list-all-zones
 firewall-cmd --get-default-zone
