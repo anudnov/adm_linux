@@ -53,6 +53,10 @@ systemctl restart firewalld && firewall-cmd –-list-ports
 ### Start and stop firewalld service:
 ```
 systemctl start firewalld.service
+```
+```
 systemctl stop firewalld.service
+```
+```
 systemctl status firewalld.service
 ```
