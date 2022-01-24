@@ -6,11 +6,21 @@ iptables -L -n
 sudo iptables -L -n
 ````
 
-### Show blocked ip:
+### Check if IP is blocked:
 ```
 iptables -L -n | grep X.X.X.X
 ```
-
+### To unblock the IP Address:
+```
+iptables -I INPUT -s [IP Address] -j ACCEPT
+```
+### To block back an IP Address:
+```
+iptables -A INPUT -d [IP Address] -j DROP
+```
+```
+service iptables save
+```
 
 
 ```
