@@ -40,10 +40,14 @@ firewall-cmd --list-services
 #### To Enable all the incoming ports for a service:
 ```
 firewall-cmd --zone=public --add-service=http
+```
+```
 firewall-cmd --permanent --zone=public --add-service=http
 ```
 ```
 firewall-cmd --add-port=2222/tcp
+```
+```
 firewall-cmd --permanent --add-port=2222/tcp
 ```
 ```
