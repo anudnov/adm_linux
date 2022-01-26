@@ -1,12 +1,14 @@
 sudo cat /etc/netplan/00-installer-config.yaml
-   # This is the network config written by 'subiquity'
+This is the network config written by 'subiquity'
+```
    network:
      ethernets:
        ens33:
          dhcp4: true
      version: 2
+```
+backup original file:
 
-# backup original file:
 sudo cp -a /etc/netplan/00-installer-config.yaml{,.orig}
 
 # Edit network configuration:
