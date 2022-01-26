@@ -1,4 +1,8 @@
-#### 1. Hostname
+#### 1. Hostname - Change Hostname Using hostnamectl
+```
+hostnamectl set-hostname "new-server-name-here"
+hostnamectl
+```
 #### 2. Update and install optionality software:
 ```
 apt-get update && apt-get upgrade -y
