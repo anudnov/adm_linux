@@ -27,7 +27,6 @@ FLUSH PRIVILEGES;
 QUIT;
 ```
 
-##################################################
 #### Step 2: Install PHP and required modules. 
 Next phase is the installation of php and required modules. Run the following commands:
 ```
