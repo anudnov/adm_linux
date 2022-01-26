@@ -6,14 +6,12 @@ https://computingforgeeks.com/install-and-configure-phpipam-on-ubuntu-debian-lin
 ```sudo apt update
 sudo apt install mariadb-server mariadb-client
 ```
-
 Ensure mariadb service is started and set to start at boot:
 ```
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
 ```
-
-#### Secure database server by setting root password:
+Secure database server by setting root password:
 ```
 sudo mysql_secure_installation
 ```
