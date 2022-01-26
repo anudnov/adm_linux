@@ -15,7 +15,7 @@ Secure database server by setting root password:
 ```
 sudo mysql_secure_installation
 ```
-ip@mpassw0rd22
+
 Once the database installation and setup is complete, create a database for phpipam user:
 ```
 $ sudo mysql -u root -p
