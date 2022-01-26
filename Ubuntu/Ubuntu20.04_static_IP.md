@@ -8,10 +8,13 @@ This is the network config written by 'subiquity'
      version: 2
 ```
 backup original file:
-
+```
 sudo cp -a /etc/netplan/00-installer-config.yaml{,.orig}
+```
 
-# Edit network configuration:
+#### Edit network configuration:
+
+````
 sudo nano /etc/netplan/00-installer-config.yaml
 
          network:
@@ -22,11 +25,15 @@ sudo nano /etc/netplan/00-installer-config.yaml
                nameservers:
                  addresses: [192.168.1.1, 8.8.8.8]
            version: 2
-
-# Test configuration:
+```
+#### Test configuration:
+```
 sudo netplan try
+```
 
-# Apply configuration:
+### Apply configuration:
+```
 sudo netplan apply
+```
 
 # END
