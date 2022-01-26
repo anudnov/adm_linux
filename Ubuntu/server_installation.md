@@ -1,4 +1,5 @@
-#### 1. Update and install optionality software:
+#### 1. Hostname
+#### 2. Update and install optionality software:
 ```
 apt-get update && apt-get upgrade -y
 ```
