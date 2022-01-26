@@ -22,7 +22,7 @@ $ sudo mysql -u root -p
 ```
 ```
 CREATE DATABASE phpipam;
-GRANT ALL ON phpipam.* TO phpipam@localhost IDENTIFIED BY 'ip@mUserP@ss';
+GRANT ALL ON phpipam.* TO phpipam@localhost IDENTIFIED BY 'PASSWORD';
 FLUSH PRIVILEGES;
 QUIT;
 ```
