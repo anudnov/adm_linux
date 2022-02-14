@@ -46,6 +46,10 @@ _or_
 ```
 exim -q
 ```
+_Path to exim command_
+_/usr/sbin/exim -q_
+_/usr/sbin/exim -qff_
+_etc_
 
 ### Show the exim mail queue
 
