@@ -1,5 +1,5 @@
 
-#### Show the exim mail queue
+### Show the exim mail queue
 _To view the exim mail queue issue the following command:_
 ```
 mailq
