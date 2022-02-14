@@ -35,3 +35,21 @@ _which would display something like this:_
 /var/spool/exim/input/1Ka6u5-00032Z-Eb-D
 /var/spool/exim/input/1Ka6u5-00032Z-Eb-H
 ```
+
+### Flush the exim mail queue
+Command to flush the exim queue
+_There are two ways to flush the exim mail queue:_
+```
+runq
+```
+_or_
+```
+exim -q
+```
+
+### Show the exim mail queue
+
+
+
+
+### Show the exim mail queue
