@@ -81,4 +81,5 @@ _And the result, if one could be removed and another one couldn’t:_
 Message 1XoJ1U-0001sC-ME has been removed
 Message 1XoJ1i-0001sQ-UJ is locked
 ```
-### Show the exim mail queue
+### FROM:
+https://electrictoolbox.com/exim-delete-message/
