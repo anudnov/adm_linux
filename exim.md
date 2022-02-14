@@ -47,7 +47,8 @@ _or_
 exim -q
 ```
 Path to exim command
-```/usr/sbin/exim -q
+```
+/usr/sbin/exim -q
 /usr/sbin/exim -qff
 etc
 ```
