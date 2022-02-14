@@ -24,8 +24,8 @@ Example output
           to@example.com
 ```
 
-#### Finding the files with the find command
-Using the "find" command you could do this to locate all the relevent files:
+Finding the files with the find command
+_Using the "find" command you could do this to locate all the relevent files:_
 ```
 find /var/spool/exim -name "1Ka6u5-00032Z-Eb*"
 ```
