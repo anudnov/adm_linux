@@ -1,9 +1,10 @@
 
 #### Show the exim mail queue
-##### To view the exim mail queue issue the following command:
-
+_To view the exim mail queue issue the following command:_
+```
 mailq
-OR
+```
+_OR_
 ```
 exim -bp
 ```
