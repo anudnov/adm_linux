@@ -53,9 +53,32 @@ Path to exim command
 etc
 ```
 
-### Show the exim mail queue
-
-
-
-
+### Delete messages from the exim mail queue
+Delete a single message from the exim mail queue
+_Use mailq / exim -bp to show the mail queue, e.g.:_
+```
+$ mailq
+ 0m   528 1XoIxD-0001rc-8J
+```
+_And then run exim -Mrm [message id] to delete the specific message:_
+```
+exim -Mrm 1XoIxD-0001rc-8J
+```
+_If the message is successfully deleted, you’ll see this:_
+```
+Message 1XoIxD-0001rc-8J has been removed
+```
+_If exim is currently processing the message, you’ll see this and it won’t be deleted:_
+```
+Message 1XoIxD-0001rc-8J is locked
+```
+#### Delete all messages in the exim mail queue
+```
+exiqgrep -i | xargs exim -Mrm
+```
+_And the result, if one could be removed and another one couldn’t:_
+```
+Message 1XoJ1U-0001sC-ME has been removed
+Message 1XoJ1i-0001sQ-UJ is locked
+```
 ### Show the exim mail queue
