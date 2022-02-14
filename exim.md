@@ -23,3 +23,15 @@ Example output
 3h   22K 1KbLHr-0004ev-An <from@example.com>
           to@example.com
 ```
+
+#### Finding the files with the find command
+Using the "find" command you could do this to locate all the relevent files:
+```
+find /var/spool/exim -name "1Ka6u5-00032Z-Eb*"
+```
+_which would display something like this🩹
+```
+/var/spool/exim/msglog/1Ka6u5-00032Z-Eb
+/var/spool/exim/input/1Ka6u5-00032Z-Eb-D
+/var/spool/exim/input/1Ka6u5-00032Z-Eb-H
+```
