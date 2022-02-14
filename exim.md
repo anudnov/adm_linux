@@ -1,4 +1,6 @@
-To view the exim mail queue issue the following command:
+
+#### Show the exim mail queue
+##### To view the exim mail queue issue the following command:
 
 mailq
 OR
