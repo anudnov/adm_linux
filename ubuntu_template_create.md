@@ -21,10 +21,15 @@ apt -y install cloud-init
 ```
 
 _apt-get install -y cloud-initramfs-growroot_
+
 _apt install cloud-initramfs-growroot_
+
 _lsblk_
+
 _echo "1" > /sys/class/block/sda/device/rescan_
+
 _growpart /dev/sda 3 #cfdisk_
+
 _lsblk_
 
 lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
