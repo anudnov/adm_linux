@@ -35,9 +35,9 @@ _lsblk_
 lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
 resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 
-#			sudo lvresize -l +100%FREE /dev/mapper/NAME
-#			sudo lvextend -l +100%FREE /dev/mapper/NAME
-#			sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+		sudo lvresize -l +100%FREE /dev/mapper/NAME
+		sudo lvextend -l +100%FREE /dev/mapper/NAME
+		sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 
 rm -f /root/.bash_history
 unset HISTFILE
