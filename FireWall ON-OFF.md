@@ -1,4 +1,4 @@
-# CentOS 6
+### CentOS 6
 Stop the firewall:
 ```
 service iptables stop
@@ -15,7 +15,7 @@ chkconfig iptables off
 systemctl disable iptables
 ```
 
-# CentOS 7
+### CentOS 7
 ```
 systemctl disable firewalld
 ```
@@ -24,7 +24,7 @@ systemctl stop firewalld
 ```
 
 
-# SElinux
+### SElinux
 Check status:
 ```
 getenforce                
