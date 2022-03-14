@@ -113,7 +113,9 @@ python3 /opt/netbox/netbox/generate_secret_key.py
 ```
 sudo nano /opt/netbox/netbox/netbox/configuration.py
 ```
+
 #### Update the information below
+
 ```
 ALLOWED_HOSTS = ['*']
 
