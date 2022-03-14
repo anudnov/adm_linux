@@ -47,6 +47,7 @@ netbox=> \q
 ```
 sudo apt install -y redis-server
 ```
+_Outpute:_
 ```
 $ redis-cli ping
 PONG
@@ -59,6 +60,7 @@ Upgrade Python PIP
 ```
 sudo pip3 install --upgrade pip
 ```
+_Outpute:_
 ```
 netbox@netbox:~$ sudo pip3 install --upgrade pip
 The directory '/home/netbox/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
