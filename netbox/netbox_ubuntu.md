@@ -31,6 +31,10 @@ GRANT ALL PRIVILEGES ON DATABASE netbox TO netbox;
 ```
 _Verify PostgreSQL install_
 ```
+psql --username netbox --password --host localhost netbox
+```
+_Outpute:_
+```
 $ psql --username netbox --password --host localhost netbox
 Password for user netbox: 
 psql (12.5 (Ubuntu 12.5-0ubuntu0.20.04.1))
