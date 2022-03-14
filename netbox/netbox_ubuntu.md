@@ -149,3 +149,37 @@ python3 manage.py createsuperuser
 ```
 python3 manage.py runserver 192.168.x.x:8000 --insecure
 ```
+#### Configure gunicorn
+```
+sudo cp /opt/netbox/contrib/gunicorn.py /opt/netbox/gunicorn.py
+```
+#### systemd Setup
+```
+sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
+```
+# (venv)
+```
+sudo systemctl daemon-reload
+```
+```
+sudo systemctl start netbox netbox-rq
+```
+```
+sudo systemctl enable netbox netbox-rq
+```
+```
+systemctl status netbox.service
+```
+
+#### Create Self Signed Certificate
+```
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+-keyout /etc/ssl/private/netbox.key \
+-out /etc/ssl/certs/netbox.crt
+```
+#### Install nginx webserver
+```
+sudo apt install -y nginx
+```
+
+
