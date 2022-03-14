@@ -46,7 +46,8 @@ netbox=> \q
 #### Install REDIS
 ```
 sudo apt install -y redis-server
-
+```
+```
 $ redis-cli ping
 PONG
 ```
