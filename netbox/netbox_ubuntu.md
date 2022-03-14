@@ -80,32 +80,55 @@ netbox@netbox:~$
 ```
 #### Install Netbox
 ```
-sudo wget https://github.com/netbox-community/netbox/archive/v2.11.10.tar.gz
+sudo git clone -b master https://github.com/digitalocean/netbox.git
 ```
-_Outpu:_
-```
---2021-08-10 03:23:12--  https://github.com/netbox-community/netbox/archive/v2.11.10.tar.gz
-Resolving github.com (github.com)... 140.82.114.4
-Connecting to github.com (github.com)|140.82.114.4|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://codeload.github.com/netbox-community/netbox/tar.gz/v2.11.10 [following]
---2021-08-10 03:23:13--  https://codeload.github.com/netbox-community/netbox/tar.gz/v2.11.10
-Resolving codeload.github.com (codeload.github.com)... 140.82.114.9
-Connecting to codeload.github.com (codeload.github.com)|140.82.114.9|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/x-gzip]
-Saving to: ‘v2.11.10.tar.gz’
 
-v2.11.10.tar.gz                           [    <=>                                                                ]   6.78M  8.84MB/s    in 0.8s    
-
-2021-08-10 03:23:14 (8.84 MB/s) - ‘v2.11.10.tar.gz’ saved [7110691]
-```
 #### Finish copy
 ```
 sudo tar -xzf v2.11.10.tar.gz -C /opt
 sudo ln -s /opt/netbox-2.11.10/ /opt/netbox
 ls -l /opt | grep netbox
 ```
+_Outpu:_
+```
+lrwxrwxrwx 1 root root   20 Aug 10 03:23 netbox -> /opt/netbox-2.11.10/
+drwxrwxr-x 7 root root 4096 Jul 28 19:56 netbox-2.11.10
+```
+
+#### Modify netbox user and media directory access
+````
+sudo usermod -aG sudo netbox
+sudo chown --recursive netbox /opt/netbox/netbox/media/
+```
+####Configure Netbox
+```
+cd /opt/netbox/netbox/netbox/
+sudo cp configuration.example.py configuration.py
+```
+#### Generate Key and copy it to a text file
+```
+python3 /opt/netbox/netbox/generate_secret_key.py
+```
+#### Update the Netbox configuration file
+```
+sudo nano /opt/netbox/netbox/netbox/configuration.py
+```
+#### Update the information below
+```
+ALLOWED_HOSTS = ['*']
+
+DATABASE = {
+    'NAME': 'netbox',         # Database name
+    'USER': 'netbox',         # PostgreSQL username
+    'PASSWORD': '**********', # PostgreSQL password update with your password
+    'HOST': 'localhost',      # Database server
+    'PORT': '',               # Database port (leave blank for default)
+    'CONN_MAX_AGE': 300,      # Max database connection age
+}
+
+SECRET_KEY = 'COPY THE KEY GENERATED EARLIER'
+```
+
 
 
 
