@@ -129,6 +129,11 @@ DATABASE = {
 SECRET_KEY = 'COPY THE KEY GENERATED EARLIER'
 ```
 
+#### Run the Upgrade script
+_The upgrade can take up to 10 minutes to complete_
+```
+sudo /opt/netbox/upgrade.sh
+```
 
 
 
