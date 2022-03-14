@@ -221,8 +221,43 @@ server {
     return 301 https://$host$request_uri;
 
 ```
+## Deactivate the Python Virtual Environment
+```
+(venv) netbox@netbox:~$ deactivate
+```
+##### Delete the default file
+```
+sudo rm /etc/nginx/sites-enabled/default
+```
+##### Create a symlink in the sites-enabled directory to the configuration file you just created
+```
+sudo ln -s /etc/nginx/sites-available/netbox /etc/nginx/sites-enabled/netbox
+```
+##### Restart nginx
+```
+sudo systemctl restart nginx
+```
+##### Verify the services
+```
+systemctl status netbox
+systemctl status nginx
+```
 
+###### Browse to https://192.168.x.x and Netbox should load
 
+###### Troubleshooting
+_Verify that the WSGI service is running_
+```
+systemctl status netbox
+```
+_Check if anything is listening on port 80_
+```
+sudo lsof -i:80
+
+COMMAND  PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+nginx   2136     root    7u  IPv6  31363      0t0  TCP *:http (LISTEN)
+nginx   2137 www-data    7u  IPv6  31363      0t0  TCP *:http (LISTEN)
+```
 
 
 
