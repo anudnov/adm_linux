@@ -136,6 +136,16 @@ _The upgrade can take up to 10 minutes to complete_
 ```
 sudo /opt/netbox/upgrade.sh
 ```
-
-
-
+#### Create Python virtual environment
+```
+source /opt/netbox/venv/bin/activate
+```
+#### Create superuser
+```
+cd /opt/netbox/netbox
+python3 manage.py createsuperuser
+```
+#### Test the application
+```
+python3 manage.py runserver 192.168.x.x:8000 --insecure
+```
