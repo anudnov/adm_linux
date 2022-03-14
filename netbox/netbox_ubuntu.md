@@ -55,17 +55,16 @@ Install additional packages
 sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential libxml2-dev libxslt1-dev libffi-dev libpq-dev libssl-dev zlib1g-dev
 ```
 Upgrade Python PIP
-    netbox@netbox:~$ sudo pip3 install --upgrade pip
-
-    The directory '/home/netbox/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner     of that directory. If executing pip with sudo, you may want sudo's -H flag.
-    The directory '/home/netbox/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of         that directory. If executing pip with sudo, you may want sudo's -H flag.
-    Collecting pip
-      Downloading https://files.pythonhosted.org/packages/ca/bf/4133a0e05eac641ec270bbcef30512b5ad307d7838adb994acd652cc30e3/pip-21.2.3-py3-none-any.whl (1.6MB)
-        100% |████████████████████████████████| 1.6MB 1.1MB/s 
-    Installing collected packages: pip
-      Found existing installation: pip 9.0.1
-        Not uninstalling pip at /usr/lib/python3/dist-packages, outside environment /usr
-    Successfully installed pip-21.2.3
-
-    netbox@netbox:~$ 
+```
+netbox@netbox:~$ sudo pip3 install --upgrade pip
+The directory '/home/netbox/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/netbox/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/ca/bf/4133a0e05eac641ec270bbcef30512b5ad307d7838adb994acd652cc30e3/pip-21.2.3-py3-none-any.whl (1.6MB)
+    100% |████████████████████████████████| 1.6MB 1.1MB/s 
+Installing collected packages: pip
+  Found existing installation: pip 9.0.1
+    Not uninstalling pip at /usr/lib/python3/dist-packages, outside environment /usr
+Successfully installed pip-21.2.3
+netbox@netbox:~$ 
 ```
