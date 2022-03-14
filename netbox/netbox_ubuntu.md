@@ -181,5 +181,50 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 ```
 sudo apt install -y nginx
 ```
+##### Copy the nginx configuration file provided by NetBox 
+```
+sudo cp /opt/netbox/contrib/nginx.conf /etc/nginx/sites-available/netbox
+```
+##### Edit the nginx configuration
+```
+sudo nano /etc/nginx/sites-available/netbox
+```
+##### Change the server name, in this case use the IP address of the server
+```
+server {
+    listen [::]:443 ssl ipv6only=off;
+
+    # CHANGE THIS TO YOUR SERVER'S NAME
+    server_name 192.168.x.x;
+
+    ssl_certificate /etc/ssl/certs/netbox.crt;
+    ssl_certificate_key /etc/ssl/private/netbox.key;
+
+    client_max_body_size 25m;
+
+    location /static/ {
+        alias /opt/netbox/netbox/static/;
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:8001;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+server {
+    # Redirect HTTP traffic to HTTPS
+    listen [::]:80 ipv6only=off;
+    server_name _;
+    return 301 https://$host$request_uri;
+
+```
+
+
+
+
+
 
 
