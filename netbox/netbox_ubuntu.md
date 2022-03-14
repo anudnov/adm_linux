@@ -33,7 +33,7 @@ _Verify PostgreSQL install_
 ```
 psql --username netbox --password --host localhost netbox
 ```
-_Outpute:_
+_Output:_
 ```
 $ psql --username netbox --password --host localhost netbox
 Password for user netbox: 
@@ -51,7 +51,7 @@ netbox=> \q
 ```
 sudo apt install -y redis-server
 ```
-_Outpute:_
+_Output:_
 ```
 $ redis-cli ping
 PONG
@@ -64,7 +64,7 @@ Upgrade Python PIP
 ```
 sudo pip3 install --upgrade pip
 ```
-_Outpute:_
+_Output:_
 ```
 netbox@netbox:~$ sudo pip3 install --upgrade pip
 The directory '/home/netbox/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
@@ -78,3 +78,34 @@ Installing collected packages: pip
 Successfully installed pip-21.2.3
 netbox@netbox:~$ 
 ```
+#### Install Netbox
+```
+sudo wget https://github.com/netbox-community/netbox/archive/v2.11.10.tar.gz
+```
+_Outpu:_
+```
+--2021-08-10 03:23:12--  https://github.com/netbox-community/netbox/archive/v2.11.10.tar.gz
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/netbox-community/netbox/tar.gz/v2.11.10 [following]
+--2021-08-10 03:23:13--  https://codeload.github.com/netbox-community/netbox/tar.gz/v2.11.10
+Resolving codeload.github.com (codeload.github.com)... 140.82.114.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.114.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘v2.11.10.tar.gz’
+
+v2.11.10.tar.gz                           [    <=>                                                                ]   6.78M  8.84MB/s    in 0.8s    
+
+2021-08-10 03:23:14 (8.84 MB/s) - ‘v2.11.10.tar.gz’ saved [7110691]
+```
+#### Finish copy
+```
+sudo tar -xzf v2.11.10.tar.gz -C /opt
+sudo ln -s /opt/netbox-2.11.10/ /opt/netbox
+ls -l /opt | grep netbox
+```
+
+
+
