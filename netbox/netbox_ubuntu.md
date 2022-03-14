@@ -1,10 +1,11 @@
-Update Ubuntu
+#### Update Ubuntu
 ```
 sudo apt update -y
 sudo apt upgrade -y
 ```
 
-PostgreSQL Database Installation
+#### PostgreSQL Database Installation
+https://netbox.readthedocs.io/en/stable/installation/1-postgresql/
 ```
 sudo apt update
 sudo apt install -y postgresql
@@ -41,4 +42,15 @@ You are connected to database "netbox" as user "netbox" on host "localhost" (add
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 netbox=> \q
 
+```
+#### Install REDIS
+```
+sudo apt install -y redis-server
+
+$ redis-cli ping
+PONG
+```
+Install additional packages
+```
+sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential libxml2-dev libxslt1-dev libffi-dev libpq-dev libssl-dev zlib1g-dev
 ```
