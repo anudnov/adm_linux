@@ -96,7 +96,7 @@ drwxrwxr-x 7 root root 4096 Jul 28 19:56 netbox-2.11.10
 ```
 
 #### Modify netbox user and media directory access
-````
+```
 sudo usermod -aG sudo netbox
 sudo chown --recursive netbox /opt/netbox/netbox/media/
 ```
