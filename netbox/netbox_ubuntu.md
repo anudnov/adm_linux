@@ -157,7 +157,7 @@ sudo cp /opt/netbox/contrib/gunicorn.py /opt/netbox/gunicorn.py
 ```
 sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
 ```
-## (venv)
+## (venv) netbox@netbox:
 ```
 sudo systemctl daemon-reload
 ```
