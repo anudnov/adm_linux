@@ -56,6 +56,9 @@ sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential
 ```
 Upgrade Python PIP
 ```
+sudo pip3 install --upgrade pip
+```
+```
 netbox@netbox:~$ sudo pip3 install --upgrade pip
 The directory '/home/netbox/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
 The directory '/home/netbox/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
