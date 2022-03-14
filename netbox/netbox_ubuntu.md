@@ -245,7 +245,9 @@ systemctl status nginx
 
 ###### Browse to https://192.168.x.x and Netbox should load
 
-###### Troubleshooting
+
+
+#### Troubleshooting
 _Verify that the WSGI service is running_
 ```
 systemctl status netbox
