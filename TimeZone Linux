@@ -1,0 +1,5 @@
+ln -sf /usr/share/zoneinfo/Europe/Athens 
+
+/etc/localtime
+
+date -s 14:47:00
