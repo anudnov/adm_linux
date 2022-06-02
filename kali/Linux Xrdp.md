@@ -31,7 +31,8 @@ echo "xfce4-session" >~/.xsession
 Restart service:
 ```
 service xrdp restart 
-service xrdp restart 
+sudo systemctl enable --now xrdp
+sudo ufw allow from any to any port 3389 proto tcp 
 ```
 Thank you:
 https://russianblogs.com/article/5996417403/
