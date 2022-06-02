@@ -9,7 +9,7 @@ vim /etc/xrdp/startwm.sh
 _add to the file: _
 echo "xfce4-session" >~/.xsession
 
-        ```
+        
         #!/bin/sh
         # xrdp X session start script (c) 2015, 2017, 2021 mirabilos
         # published under The MirOS Licence
@@ -27,6 +27,6 @@ echo "xfce4-session" >~/.xsession
         test -x /etc/X11/Xsession && exec /etc/X11/Xsession
         exec /bin/sh /etc/X11/Xsession
 
-        ```
+        
 Thank you:
 https://russianblogs.com/article/5996417403/
