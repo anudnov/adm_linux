@@ -28,5 +28,10 @@ echo "xfce4-session" >~/.xsession
         exec /bin/sh /etc/X11/Xsession
 
         
+Restart service:
+```
+service xrdp restart 
+service xrdp restart 
+```
 Thank you:
 https://russianblogs.com/article/5996417403/
