@@ -5,5 +5,5 @@ usermod -aG sudo user_name
 ###################################
 
 sudo ls -la /root
-sudo deluser master
+sudo deluser user_name
 cat /etc/passwd
