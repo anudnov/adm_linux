@@ -1,0 +1,9 @@
+
+adduser user_name
+usermod -aG sudo user_name
+
+###################################
+
+sudo ls -la /root
+sudo deluser master
+cat /etc/passwd

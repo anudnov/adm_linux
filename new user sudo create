@@ -1,2 +1,0 @@
-adduser user_name
-usermod -aG sudo user_name
