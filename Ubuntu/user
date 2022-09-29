@@ -5,6 +5,8 @@ sudo adduser  {user-name}
 # Add the user to the sudo group:
 usermod -aG sudo {user-name}
 
+# ROOT - delete a user password
+sudo passwd -dl root
 
 #########################################################
 
