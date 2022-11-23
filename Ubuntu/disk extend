@@ -18,6 +18,7 @@ resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 #			sudo lvextend -l +100%FREE /dev/mapper/NAME
 #			sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 
+lvextend --extents +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv -r
 
 
 # https://dade2.net/kb/how-to-extend-filesystem-on-linux/
