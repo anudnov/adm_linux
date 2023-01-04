@@ -23,3 +23,11 @@ lvextend --extents +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv -r
 
 # https://dade2.net/kb/how-to-extend-filesystem-on-linux/
 # https://packetpushers.net/ubuntu-extend-your-default-lvm-space/
+
+pvdisplay
+vgdisplay
+lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+lvdisplay
+resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+df -h
+
