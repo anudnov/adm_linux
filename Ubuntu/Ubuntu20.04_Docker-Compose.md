@@ -7,7 +7,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 $ docker-compose --version
 ```
-#### docker-compose version 1.21.2, build 1719ceb
+_docker-compose version 1.21.2, build 1719ceb_
 
 Original link: 
 https://docker-docs.netlify.app/compose/install/#install-compose
