@@ -11,7 +11,7 @@ apt-get update && apt-get upgrade -y
 apt-get install -y cloud-initramfs-growroot
 ```
 ```
-apt install mlocate htop iftop net-tools git curl
+apt install mlocate htop iftop net-tools git curl -y
 ```
 #### 3. Add user
 How to create a user account on Ubuntu Linux
