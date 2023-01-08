@@ -12,3 +12,8 @@ _docker-compose version 1.21.2, build 1719ceb_
 #### Original link: 
 https://docker-docs.netlify.app/compose/install/#install-compose
 
+## Error:
+```
+ERROR: Version in "./docker-compose.yml" is unsupported. You might be seeing this error because you're using the wrong Compose file version. Either specify a supported version (e.g "2.2" or "3.3") and place your service definitions under theserviceskey, or omit theversionkey and place your service definitions at the root of the file to use version 1. For more on the Compose file format versions, see https://docs.docker.com/compose/compose-file/
+```
+https://github.com/datahub-project/datahub/issues/2020
