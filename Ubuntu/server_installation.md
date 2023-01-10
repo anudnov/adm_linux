@@ -3,6 +3,15 @@
 hostnamectl set-hostname "new-server-name-here"
 hostnamectl
 ```
+#### Time:
+```
+timedatectl
+```
+_List teme zone: timedatectl list-timezones_
+```
+sudo timedatectl set-timezone Asia/Jerusalem
+```
+_Manual: date -s 14:47:00_
 #### Update and install optionality software:
 ```
 apt-get update && apt-get upgrade -y
@@ -30,15 +39,6 @@ To remove home directory and mail spool too, enter:
 ```
 sudo userdel -r  {user-name}
 ```
-#### Time:
-```
-timedatectl
-```
-timedatectl list-timezones
-```
-sudo timedatectl set-timezone Asia/Jerusalem
-```
-date -s 14:47:00
 
 #### 
 #### 
