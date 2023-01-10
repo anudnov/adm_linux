@@ -1,9 +1,9 @@
-#### 1. Hostname - Change Hostname Using hostnamectl
+#### Hostname - Change Hostname Using hostnamectl
 ```
 hostnamectl set-hostname "new-server-name-here"
 hostnamectl
 ```
-#### 2. Update and install optionality software:
+#### Update and install optionality software:
 ```
 apt-get update && apt-get upgrade -y
 ```
@@ -13,7 +13,7 @@ apt-get install -y cloud-initramfs-growroot
 ```
 apt install mlocate htop iftop net-tools git curl -y
 ```
-#### 3. Add user
+#### Add user
 How to create a user account on Ubuntu Linux
 ```
 sudo adduser  {user-name}
@@ -30,6 +30,15 @@ To remove home directory and mail spool too, enter:
 ```
 sudo userdel -r  {user-name}
 ```
-#### 4. 
-#### 5. 
-#### 6. 
+#### Time:
+```
+timedatectl
+```
+timedatectl list-timezones
+```
+sudo timedatectl set-timezone Asia/Jerusalem
+```
+date -s 14:47:00
+
+#### 
+#### 
