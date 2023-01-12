@@ -24,6 +24,10 @@ lvextend --extents +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv -r
 # https://dade2.net/kb/how-to-extend-filesystem-on-linux/
 # https://packetpushers.net/ubuntu-extend-your-default-lvm-space/
 
+lsblk
+echo "1" > /sys/class/block/sda/device/rescan
+lsblk
+growpart /dev/sda 3
 pvdisplay
 vgdisplay
 lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
