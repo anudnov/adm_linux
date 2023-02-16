@@ -62,3 +62,4 @@ If you want to reset UFW firewall completely and remove all existing rules, you 
 ufw reset
 ```
 
+https://webdock.io/en/docs/how-guides/security-guides/how-work-your-firewall-ufw-uncomplicated-firewall#:~:text=The%20UFW%20firewall%20is%20pre,%2C%20443%20and%2050000%2D50099.&text=As%20you%20can%20see%2C%20UFW,services%20from%20the%20outside%20network.
