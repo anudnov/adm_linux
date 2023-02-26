@@ -1,6 +1,6 @@
 #### Hostname - Change Hostname Using hostnamectl
 ```
-hostnamectl set-hostname "new-server-name-here"
+hostnamectl set-hostname ""
 hostnamectl
 ```
 #### Time:
