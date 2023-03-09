@@ -23,7 +23,7 @@ _Manual: date -s 14:47:00_
 apt-get update && apt-get upgrade -y
 ```
 ```
-apt-get install -y cloud-initramfs-growroot mlocate htop iftop net-tools git curl
+apt-get install -y nano cloud-initramfs-growroot mlocate htop iftop net-tools git curl
 ```
 
 #### Add user
