@@ -5,6 +5,10 @@ hostnamectl set-hostname ""
 ```
 hostnamectl
 ```
+#### If use vmware:
+```
+sudo apt install open-vm-tools 
+```
 #### Time:
 ```
 timedatectl
