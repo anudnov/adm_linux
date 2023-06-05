@@ -5,9 +5,7 @@ apt-get install -y cloud-initramfs-growroot
 ```
 apt install cloud-initramfs-growroot
 ```
-```
-echo "1" > /sys/class/block/sda/device/rescan
-```
+#### Start:
 ```
 lsblk
 echo "1" > /sys/class/block/sda/device/rescan
