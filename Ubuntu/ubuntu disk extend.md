@@ -1,6 +1,7 @@
 ```
 apt-get install -y cloud-initramfs-growroot
 ```
+### Or
 ```
 apt install cloud-initramfs-growroot
 ```
