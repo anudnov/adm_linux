@@ -7,8 +7,8 @@ apt install cloud-initramfs-growroot
 
 lsblk
 
-#			echo "1" > /sys/class/block/sda/device/rescan
-#			growpart /dev/sda 3 #cfdisk
+####			echo "1" > /sys/class/block/sda/device/rescan
+####			growpart /dev/sda 3 #cfdisk
 #     pvresize /dev/sda
 #     lvextend -r -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
 #			lsblk
