@@ -4,28 +4,28 @@ apt-get install -y cloud-initramfs-growroot
 ```
 apt install cloud-initramfs-growroot
 ```
-
+```
 lsblk
-
+```
 ####			echo "1" > /sys/class/block/sda/device/rescan
 ####			growpart /dev/sda 3 #cfdisk
-#     pvresize /dev/sda
-#     lvextend -r -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
-#			lsblk
+####     pvresize /dev/sda
+####     lvextend -r -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
+####			lsblk
 
 lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
 
 resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 
-#			sudo lvresize -l +100%FREE /dev/mapper/NAME
-#			sudo lvextend -l +100%FREE /dev/mapper/NAME
-#			sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+####			sudo lvresize -l +100%FREE /dev/mapper/NAME
+####			sudo lvextend -l +100%FREE /dev/mapper/NAME
+####			sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 
 lvextend --extents +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv -r
 
 
-# https://dade2.net/kb/how-to-extend-filesystem-on-linux/
-# https://packetpushers.net/ubuntu-extend-your-default-lvm-space/
+#### https://dade2.net/kb/how-to-extend-filesystem-on-linux/
+#### https://packetpushers.net/ubuntu-extend-your-default-lvm-space/
 
 lsblk
 echo "1" > /sys/class/block/sda/device/rescan
