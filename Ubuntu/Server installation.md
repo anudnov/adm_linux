@@ -29,11 +29,11 @@ apt-get install -y nano cloud-initramfs-growroot mlocate htop iftop net-tools gi
 #### Add user
 How to create a user account on Ubuntu Linux
 ```
-sudo adduser  {user-name}
+sudo adduser ...
 ```
 Add the user to the sudo group:
 ```
-usermod -aG sudo {user-name}
+usermod -aG sudo ...
 ```
 ROOT - delete a user password
 ```
