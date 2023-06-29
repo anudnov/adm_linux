@@ -8,18 +8,26 @@ apt install cloud-initramfs-growroot
 #### Start:
 ```
 lsblk
+```
+```
 echo "1" > /sys/class/block/sda/device/rescan
 ```
 ```
 lsblk
+```
+```
 growpart /dev/sda 3
 ```
 ```
 pvdisplay
+```
+```
 vgdisplay
 ```
 ```
 lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+```
+```
 lvdisplay
 ```
 ```
