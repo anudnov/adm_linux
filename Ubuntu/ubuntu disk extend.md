@@ -26,6 +26,7 @@ vgdisplay
 ```
 ```
 lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+lvextend -r -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 ```
 ```
 lvdisplay
