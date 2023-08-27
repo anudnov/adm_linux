@@ -25,8 +25,9 @@ pvdisplay
 vgdisplay
 ```
 ```
-lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+pvresize /dev/sda3
 lvextend -r -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+
 ```
 ```
 lvdisplay
