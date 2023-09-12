@@ -7,7 +7,7 @@ hostnamectl
 ```
 #### If use vmware:
 ```
-sudo apt install open-vm-tools 
+apt-get update && sudo apt install open-vm-tools 
 ```
 #### Time:
 ```
