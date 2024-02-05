@@ -18,15 +18,15 @@ sudo cp -a /etc/netplan/00-installer-config.yaml{,.orig}
 sudo nano /etc/netplan/00-installer-config.yaml
 ```
 ```
+network:
+  ethernets:
+    ens160:
+      addresses: [10.10.10.10/24]
+      gateway4: 10.10.10.254
+      nameservers:
+        addresses: [10.10.10.1]
+  version: 2
 
-         network:
-           ethernets:
-             ens33:                              #Change name to your
-               addresses: [192.168.1.100/24]     #Change IP address to your IP
-               gateway4: 192.168.1.1             #Change DG 
-               nameservers:
-                 addresses: [192.168.1.1, 8.8.8.8]
-           version: 2
 ```
 
 #### Test configuration:
