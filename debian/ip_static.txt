@@ -1,0 +1,16 @@
+sudo nano /etc/network/interfaces
+
+auto ens224
+iface ens224 inet static
+    address 192.168.1.2      # Set your desired static IP address
+    netmask 255.255.255.0   # Set your subnet mask
+    gateway 192.168.1.1     # Set your gateway address
+    dns-nameservers 8.8.8.8 8.8.4.4   # Set your DNS servers
+
+sudo systemctl restart networking
+
+sudo ifdown ens224
+sudo ifup ens224
+
+ip addr show ens224
+
