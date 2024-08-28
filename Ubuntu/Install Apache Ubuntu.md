@@ -56,21 +56,25 @@ nano /var/www/site.YOUR-SITE.com/index.html
         </body>
     </html>
 ```
+```
 sudo nano /etc/apache2/sites-available/demo1.YOUR-SITE.com.conf
-
-<VirtualHost *:80>
-    ServerAdmin webmaster@localhost
-    ServerName demo1.YOUR-SITE.com
-    ServerAlias www.demo1.YOUR-SITE.com
-    DocumentRoot /var/www/demo1.YOUR-SITE.com
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-
+```
+```
+    <VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName demo1.YOUR-SITE.com
+        ServerAlias www.demo1.YOUR-SITE.com
+        DocumentRoot /var/www/demo1.YOUR-SITE.com
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+    </VirtualHost>
+```
+```
 sudo a2ensite demo1.YOUR-SITE.com.conf
 sudo a2dissite 000-default.conf
 sudo apache2ctl configtest
-
-
+```
+```
 sudo systemctl restart apache2
+```
 
