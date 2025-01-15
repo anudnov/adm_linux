@@ -1,4 +1,4 @@
-##### Step 1: Install Docker and Docker Compose
+###### Step 1: Install Docker and Docker Compose
 ````
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -12,7 +12,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ````
 
-##### Step 2: Create Docker Compose File
+###### Step 2: Create Docker Compose File
 ````
 mkdir zabbix-docker && cd zabbix-docker
 ````
@@ -86,9 +86,12 @@ networks:
     driver: bridge
 ````
 
-#####
+###### Start the Zabbix Compose:
+````
 docker-compose up -d
-#####
-#####
-#####
-#####
+````
+###### Verify that all containers are running:
+````
+docker-compose ps
+````
+
