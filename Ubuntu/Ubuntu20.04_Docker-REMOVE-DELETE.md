@@ -1,8 +1,9 @@
-How To Remove Docker Images, Containers, and Volumes
+#### How To Remove Docker Images, Containers, and Volumes
 
 Purging All Unused or Dangling Images, Containers, Volumes, and Networks
+````
 docker system prune
-
+````
 
 
 Stop and remove all containers
