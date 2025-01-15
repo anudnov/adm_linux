@@ -95,3 +95,5 @@ docker-compose up -d
 docker-compose ps
 ````
 
+#### Thank to:
+https://astrx.site/posts/zabbix_docker/
