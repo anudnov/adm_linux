@@ -11,7 +11,7 @@
 sudo apt update
 
 # Install the desired software package
-sudo apt install -y nano cloud-initramfs-growroot mlocate htop iftop net-tools git wget curl
+sudo apt install -y nano cloud-initramfs-growroot mlocate htop iftop net-tools git wget curl fail2ban
 # Disk scan
 echo "1" > /sys/class/block/sda/device/rescan
 
