@@ -7,6 +7,7 @@
 #########
 #########
 yum install -y cloud-utils-growpart
+echo 1 > /sys/class/block/sda/device/rescan
 partprobe /dev/sda
 growpart /dev/sda 2
 pvresize /dev/sda2
